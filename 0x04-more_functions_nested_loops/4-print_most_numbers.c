@@ -10,6 +10,7 @@
 void print_most_numbers(void)
 {
 	int num = 0;
+
 	char c
 
 	do {
@@ -19,7 +20,6 @@ void print_most_numbers(void)
 			num++;
 			continue;
 		}
-
 		else
 		{
 			_putchar(num + 48);
