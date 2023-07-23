@@ -14,12 +14,14 @@ void print_most_numbers(void)
 
 	do {
 		c = num + 48;
-		if (c == '2' || c == '4'){
+		if (c == '2' || c == '4')
+		{
 			num++;
 			continue;
 		}
 
-		else{
+		else
+		{
 			_putchar(num + 48);
 			num++;
 		}
