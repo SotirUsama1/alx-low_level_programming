@@ -11,7 +11,7 @@ void print_most_numbers(void)
 {
 	int num = 0;
 
-	char c
+	char c;
 
 	do {
 		c = num + 48;
