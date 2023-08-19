@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * print_triangles - print triangles
+ * print_triangle - print triangles
  *
  * @size: triangle dimension
  *
  * Return: Always 0 (Success)
  */
 
-void print_triangles(int size)
+void print_triangle(int size)
 {
 	int i, j, l;
 	
