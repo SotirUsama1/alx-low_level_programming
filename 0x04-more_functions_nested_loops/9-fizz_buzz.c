@@ -2,7 +2,7 @@
 
 /**
  * main - Fizz buzz
- * 
+ *
  * Return: Always 0 (Success)
 */
 
