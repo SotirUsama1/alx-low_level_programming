@@ -1,7 +1,9 @@
 #include "main.h"
 
 /**
- * main - print triangles
+ * print_triangles - print triangles
+ *
+ * @size: triangle dimension
  *
  * Return: Always 0 (Success)
  */
