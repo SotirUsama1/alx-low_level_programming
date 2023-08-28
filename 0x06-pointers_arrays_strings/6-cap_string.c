@@ -17,5 +17,6 @@ char *cap_string(char *s)
 			{
 				if (s[i - 1] == sep[j] || i == 0)
 					s[i] -= 32;
+			}
 	return (s);
 }
