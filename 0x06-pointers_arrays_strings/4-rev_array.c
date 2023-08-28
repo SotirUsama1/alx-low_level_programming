@@ -1,31 +1,21 @@
 /**
- * reverse_array - a function that reverses the
- *                content of an array of integers
+ * reverse_array - reverse array containing n elements
  *
- * @a: pointer to int array
- * @n: is the number of elements to swap
+ * @a: array
+ * @n: number of elements
  *
- * Return: nothing
+ * Return: 0
 */
-
 void reverse_array(int *a, int n)
 {
-	int temp, s, e;
+	int temp[n + 1], i;
 
-	s = 0;
-	e = n - 1;
-	/**
-	 * set value in array a in temp
-	 * then place the last array in
-	 * the first array then place
-	 * value in temp to last array
-	*/
-	while (s < e)
+	for (i = 0; i < n; i++)
 	{
-		temp = a[s];
-		a[s] = a[e];
-		a[e] = temp;
-		s++;
-		e--;
+		temp[i] = a[n - 1 - i];
+	}
+	for (i = 0; i < n; i++)
+	{
+		a[i] = temp[i];
 	}
 }
