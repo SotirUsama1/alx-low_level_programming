@@ -2,7 +2,7 @@
  * leet - replace some letters with some numbers
  *
  * @s: string variable
- * 
+ *
  * Return: s
 */
 char *leet(char *s)
@@ -16,7 +16,7 @@ char *leet(char *s)
 		for (j = 0; j < 5; j++)
 		{
 			if (s[i] == lc[j] || s[i] == uc[j])
-			        s[i] = r[j];
+				s[i] = r[j];
 		}
 	return (s);
 }
