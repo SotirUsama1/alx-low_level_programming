@@ -9,28 +9,24 @@
  *         of the located substring or
  *         NULL if substring is not found
 */
-
 char *_strstr(char *haystack, char *needle)
 {
-	/**
-	 * we initialize a helping variable
-	 * to assist in returning one of
-	 * our parameters pointers haystack
-	*/
-	char *h, *n;
+	int i, j;
 
-	while (*haystack != '\0')
+	for (i = 0; haystack[0] != '\0'; i++)
 	{
-		h = haystack;
-		n = needle;
-		while (*n != '\0' && *haystack == *n)
+		for (j = 0; needle[j] != '\0'; j++)
 		{
-			haystack++;
-			n++;
+			if (haystack[0] == needle[j] && needle[j + 1] != '\0')
+			{
+				return (needle);
+			}
+			else if (haystack[0] == needle[j])
+			{
+				continue;
+			}
 		}
-		if (!*n)
-			return (h);
 		haystack++;
 	}
-	return ('\0');
+	return (NULL);
 }
