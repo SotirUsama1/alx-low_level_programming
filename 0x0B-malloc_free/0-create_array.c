@@ -7,24 +7,19 @@
  * @size: array size
  * @c: char to initialize array with
  *
- * Return: array @a
+ * Return: array @arr
 */
-
 char *create_array(unsigned int size, char c)
 {
-	unsigned int i;
-	char *a;
+	char* arr;
+	int i;
 
 	if (size == 0)
 		return (NULL);
-
-	a = malloc(size * sizeof(char));
-
-	if (a == NULL)
-		return (NULL);
-
+	arr = (char*) malloc(size * sizeof(c));
 	for (i = 0; i < size; i++)
-		a[i] = c;
-
-	return (a);
+	{
+		arr[i] = c;
+	}
+	return (arr);
 }
