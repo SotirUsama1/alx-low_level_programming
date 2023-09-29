@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * _puts_recursion: the function
+ * _puts_recursion - the function is a replica for puts using recursion
  *
  * @s: string
 */
@@ -17,4 +17,5 @@ void _puts_recursion(char *s)
 		s++;
 		_puts_recursion(s);
 	}
+	_putchar('\n');
 }
