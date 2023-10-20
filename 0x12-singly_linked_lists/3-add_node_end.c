@@ -9,7 +9,7 @@
  * Return: pointer to the list's head element
  */
 
-list_t *add_node_end(list_t **head, const char *str);
+list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *node;
 	list_t *temp = *head;
@@ -33,7 +33,7 @@ list_t *add_node_end(list_t **head, const char *str);
 	}
 
 	while (temp->next)
-		temp = temp->nest;
+		temp = temp->next;
 	temp->next = node;
 
 	return (node);
