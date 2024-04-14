@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/0x17-doubly_linked_lists/Output-Solution.txt
+/CppProperties.json
